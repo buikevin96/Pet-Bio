@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         catView.setOnClickListener(this);
         dogView.setOnClickListener(this);
 
+
+
     }
 
     @Override
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 catIntent.putExtra("name", "Kevin");
                 catIntent.putExtra("bio", "Great cat, loves people, and meows a lot");
                 startActivity(catIntent);
-                Toast.makeText(MainActivity.this, "Dog Touched", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Cat Touched", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.dogID:
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dogIntent.putExtra("name", "Helen");
                 dogIntent.putExtra("bio", "Great dog, loves people, and barks a lot");
                 startActivity(dogIntent);
-                Toast.makeText(MainActivity.this, "Cat Touched", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Dog Touched", Toast.LENGTH_LONG).show();
                 break;
         }
     }
